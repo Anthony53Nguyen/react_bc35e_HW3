@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import style from './ProductItem.module.css';
 
 export default class ProductIem extends Component {
   render() {
     return (
-      <div className="card">
+      <div className={`${style.card} card`}>
         <img
           src={this.props.prod.image}
           alt="..."
